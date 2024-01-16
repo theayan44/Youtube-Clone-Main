@@ -1,0 +1,264 @@
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#video-player {
+    /* border: 2px solid tomato; */
+    height: calc(45vw * 9 / 16);
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.main-body {
+    position: relative;
+    top: 80px;
+    background-color: #181818;
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    height: max-content;
+    width: 100vw;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.main-body::-webkit-scrollbar {
+    display: none;
+}
+
+.video-div {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 55%;
+}
+
+.main-video-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.video-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.video-statistics {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-statistics>div>span {
+    font-size: 13px;
+    color: rgb(230, 228, 228);
+}
+
+.like-dislike-icon {
+    width: 50%;
+    display: flex;
+    gap: 5px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.like-dislike-icon>span {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    color: white !important;
+    font-size: 14px !important;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.like-dislike-icon>span:nth-child(2n+1)>img {
+    margin-top: -4px;
+}
+
+.like-dislike-icon>span:last-child>img {
+    height: 15px;
+    width: 30px;
+}
+
+.channel-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 15px 0px;
+    border-top: 1px solid rgb(64, 64, 64);
+    border-bottom: 1px solid rgb(64, 64, 64);
+}
+
+.channel-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.channel-logo-and-name {
+    display: flex;
+    gap: 10px;
+}
+
+.channel-logo-and-name>img {
+    width: 55px;
+    height: 50px;
+}
+
+.channel-logo-and-name>p {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    justify-content: center;
+}
+
+.channel-logo-and-name>p>span:last-child {
+    color: rgb(189, 188, 188);
+    font-size: 12px;
+}
+
+.channel-details>button {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    width: 25%;
+    height: 85%;
+    max-width: 120px;
+    text-align: center;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+
+.channel-details>button:hover {
+    background-color: rgb(226, 0, 0);
+    color: rgb(217, 217, 217);
+}
+
+.video-description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 65px;
+    font-size: 15px;
+}
+
+.video-description>p {
+    height: 55px;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.video-description>span {
+    cursor: pointer;
+    color: rgb(189, 188, 188);
+    font-weight: bold;
+    font-size: 13px;
+    width: fit-content;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.comments>h4 {
+    color: rgb(169, 169, 169);
+}
+
+.single-comment {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(44, 43, 43);
+}
+
+.single-comment>h5 {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.single-comment>p {
+    color: rgb(186, 185, 185);
+    font-size: 14px;
+}
+
+.related-videos-div {
+    /* border: 1px solid red; */
+    width: 25%;
+    box-sizing: border-box;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+}
+
+.filters>span {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+.related-videos {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card {
+    display: flex;
+    gap: 5px;
+    height: fit-content;
+    background-color: rgb(51, 51, 51);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card>img {
+    width: 40%;
+    height: calc(14vw * 9 / 16);
+    border-radius: 5px 0 0 5px;
+}
+
+.card>.details {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-height: 100%;
+    overflow: hidden;
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
+
+.card>.details>h4 {
+    font-size: 14px;
+}
+
+.card>.details>p {
+    display: flex;
+    gap: 2px;
+    color: rgb(159, 158, 158);
+}
+
+.card>.details>p>span {
+    color: rgb(159, 158, 158);
+}
