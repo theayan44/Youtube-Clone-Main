@@ -211,6 +211,12 @@ header img {
     display: none;
 }
 
+#loading {
+    align-self: center;
+    margin: auto;
+    font-size: 18px;
+}
+
 .single-video {
     margin-top: 10px;
     display: flex;
